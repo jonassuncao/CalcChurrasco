@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/churrasqueira.png">
+  <title>Calculadora de Churrasco</title>
+
+  <!-- Bootstrap -->
+  <link href="css/tamplate-bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="css/tamplate-bootstrap/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="css/tamplate-bootstrap/nprogress.css" rel="stylesheet">
+  <!-- Custom Theme Style -->
+  <link href="css/tamplate-bootstrap/custom.min.css" rel="stylesheet">
+  <!-- Style - @Jonathas -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <!-- page content -->
+    <div class="right_col" role="main">
+      <div class="row">
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="x_panel">
+            <div class="x_title">
+              <h1><img class="img_title" src="img/carne.png" />
+                <b>Calculadora de Churrasco</b>
+                <img class="img_title" src="img/espeto.png" /></h1>
+
+              <div class="clearfix"></div>
+            </div>
+
+
+            <!-- Smart Wizard -->
+            <div class="clearfix"></div>
+
+            <div id="wizard" class="form_wizard wizard_horizontal">
+              <ul class="wizard_steps">
+                <li>
+                  <a href="#step-1">
+                    <span class="step_no">1</span>
+                    <span class="step_descr">
+                      Início<br />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#step-2">
+                    <span class="step_no">2</span>
+                    <span class="step_descr">
+                      Convidados<br />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#step-3">
+                    <span class="step_no">3</span>
+                    <span class="step_descr">
+                      Carnes<br />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#step-4">
+                    <span class="step_no">4</span>
+                    <span class="step_descr">
+                      Acompanhamentos<br />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#step-5">
+                    <span class="step_no">5</span>
+                    <span class="step_descr">
+                      Bebidas<br />
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <div id="step-1">
+                <div style="width: 100%">
+                  <img style="float: left;" class="img_title" src="img/duvida2.png" />
+                  <div style="float: left; width: 60%; padding-top: 2vh">
+                    <h2>O que você vai comprar <b>será</b> sufiente para fazer o churrasco?</h2>
+                    <h2>Será que você <b>está</b> considerando o gosto de cada convidado?</h2>
+                    <h2>Será que o valor que você estipulou é <b>suficiente</b> ?</h2>
+                    <h2>Já pensou se a carne <b>acabar</b> no meio do churrasco?</h2>
+                    <h2>E se as bebidas <b>acabarem</b>?</h2>
+                  </div>
+                  <img style="float: left;" class="img_title" src="img/duvida3.png" />
+                </div>
+
+                <div class="clearfix"></div>
+                <h2>Acalme-se...</h2>
+                <h2><b>Use a calculadora de churrasco, para saber o que tem que comprar e a quantidade
+                    correta, pars desfrutar de um <img class="img_footer" src="img/excelente.png" /><b>excelente
+                      churrasco!</b><img class="img_footer" src="img/excelente.png" /></h2>
+
+              </div>
+              <div id="step-2">
+                <h2 class="StepTitle">Convidados</h2>
+                <p>Primeiro... Informe quantas pessoas vão nesse churrasco...</p>                
+                <form style="margin-top: 10vh;" class="form-horizontal form-label-left">
+
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Qtd. Homens</label>                     
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <input type="number" id="first-name" style="width: 8vw;" class="form-control col-md-7 col-xs-12" value="1">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Qtd. Mulheres</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <input type="number" id="last-name" name="last-name" style="width: 8vw;" class="form-control col-md-7 col-xs-12" value="0">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Qtd. Crianças/Idosos</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" id="last-name" name="last-name" style="width: 8vw;" class="form-control col-md-7 col-xs-12" value="0">
+                      </div>
+                    </div>
+                </form>
+              </div>
+              <div id="step-3">
+                <h2 class="StepTitle">Step 3 Content</h2>
+                <p>
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div id="step-4">
+                <h2 class="StepTitle">Step 4 Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                  anim id est laborum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div id="step-5">
+                <h2 class="StepTitle">Step 5 Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                  anim id est laborum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <!-- End SmartWizard Content -->
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /page content -->
+
+    <!-- footer content -->
+    <footer>
+      <div class="pull-right">
+        by Jônathas Assunção | Goiânia - GO | @2018 | <a href="https://www.facebook.com/jonathas.assuncao.35"><img
+            class="img_footer" src="img/facebook.png" /></a> <a href="https://plus.google.com/u/0/105432877782806696266"><img
+            class="img_footer" src="img/google.png" /></a> <a href="https://github.com/jonassuncao"><img class="img_footer"
+            src="img/github.jpg" /></a>
+      </div>
+      <div class="clearfix"></div>
+    </footer>
+    <!-- /footer content -->
+
+  </div>
+
+  <!-- jQuery -->
+  <script src="js/tamplate-js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/tamplate-js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="js/tamplate-js/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="js/tamplate-js/nprogress.js"></script>
+  <!-- jQuery Smart Wizard -->
+  <script src="js/tamplate-js/jquery.smartWizard.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="js/tamplate-js/custom.min.js"></script>
+  <!-- JavaScript - @Jonathas -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
