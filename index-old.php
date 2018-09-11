@@ -16,27 +16,6 @@
     
     <body>
         <form>
-            <label>Duração média</label><input type="text" name="cep"/><br/>
-            <br/>
-            <label>Convidados<label><br/>
-            <label>Quantidade de Homens</label><input type="text" name="cep"/><br/>
-            <label>Quantidade de Mulheres</label><input type="text" name="cep"/><br/>
-            <label>Quantidade de Idosos/Crianças</label><input type="text" name="cep"/><br/>
-            <br/>
-            <label>Carne<label><br/>
-            <label>Alcatra</label><input type="text" name="cep"/><br/>	
-            <label>Costela</label><input type="text" name="cep"/><br/>	
-            <label>Filé Mignon</label><input type="text" name="cep"/><br/>	
-            <label>Fraldinha</label><input type="text" name="cep"/><br/>	
-            <label>Maminha</label><input type="text" name="cep"/><br/>	
-            <label>Picanha</label><input type="text" name="cep"/><br/>	
-            <label>Cupim</label><input type="text" name="cep"/><br/>
-            <br/>        
-            <label>Acompanhamento<label><br/>
-            <label>Arroz</label><input type="text" name="cep"/><br/>
-            <label>Pão de Alho</label><input type="text" name="cep"/><br/>
-            <label>Queijo Coalho</label><input type="text" name="cep"/><br/>
-            <label>Salada</label><input type="text" name="cep"/><br/>
             <br/>
             <label>Bebidas<label><br/>
             <label>Qtd. Bebidas alcoólicas</label><input type="text" name="cep"/><br/>
