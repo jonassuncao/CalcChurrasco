@@ -24,7 +24,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="nav-md">
+<body class="nav-md" id="bd">
   <div class="container body">
     <!-- page content -->
     <div class="right_col" role="main">
@@ -113,23 +113,23 @@
                 <form style="margin-top: 10vh;" class="form-horizontal form-label-left">
 
                   <div class="form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Qtd. Homens</label>
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="qtd-homem">Qtd. Homens</label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                      <input type="number" id="first-name" style="width: 8vw;" class="form-control col-md-7 col-xs-12"
-                        value="1">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Qtd. Mulheres</label>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <input type="number" id="last-name" name="last-name" style="width: 8vw;" class="form-control col-md-7 col-xs-12"
+                      <input type="number" id="qtd-homem" name="qtd-homem" min="0" style="width: 8vw;" class="form-control col-md-7 col-xs-12"
                         value="0">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Qtd. Crianças/Idosos</label>
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="qtd-mulher">Qtd. Mulheres</label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                      <input type="number" id="last-name" name="last-name" style="width: 8vw;" class="form-control col-md-7 col-xs-12"
+                      <input type="number" id="qtd-mulher" name="qtd-mulher" min="0" style="width: 8vw;" class="form-control col-md-7 col-xs-12"
+                        value="0">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="qtd-crianca">Qtd. Crianças/Idosos</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <input type="number" id="qtd-crianca" name="qtd-crianca" min="0" style="width: 8vw;" class="form-control col-md-7 col-xs-12"
                         value="0">
                     </div>
                   </div>
@@ -145,8 +145,8 @@
                     <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
                       <label class="">
                         <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                            class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                            style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                            class="flat" id="picanha" name="carne" checked="checked" value="54.90" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
                         <font style="vertical-align: inherit;">
                           <font style="vertical-align: inherit;"> <b>Picanha</b>
                           </font>
@@ -158,8 +158,8 @@
                     <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
                       <label class="">
                         <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                            class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                            style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                            class="flat" id="costela" name="carne" checked="checked" value="10.50" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
                         <font style="vertical-align: inherit;">
                           <font style="vertical-align: inherit;"> <b>Costela</b>
                           </font>
@@ -171,8 +171,8 @@
                     <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
                       <label class="">
                         <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                            class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                            style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                            class="flat" id="fraldinha" name="carne" checked="checked" value="22.94" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
                         <font style="vertical-align: inherit;">
                           <font style="vertical-align: inherit;"> <b>Fraldinha</b>
                           </font>
@@ -184,8 +184,8 @@
                     <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
                       <label class="">
                         <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                            class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                            style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                            class="flat" id="maminha" name="carne" checked="checked" value="24.90" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
                         <font style="vertical-align: inherit;">
                           <font style="vertical-align: inherit;"> <b>Maminha</b>
                           </font>
@@ -197,8 +197,8 @@
                     <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
                       <label class="">
                         <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                            class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                            style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                            class="flat" id="alcatra" name="carne" checked="checked" value="24.90" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
                         <font style="vertical-align: inherit;">
                           <font style="vertical-align: inherit;"> <b>Alcatra</b>
                           </font>
@@ -210,8 +210,8 @@
                     <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
                       <label class="">
                         <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                            class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                            style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                            class="flat" id="file-mignon" name="carne" checked="checked" value="39.90" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
                         <font style="vertical-align: inherit;">
                           <font style="vertical-align: inherit;"> <b>Filé Mignon</b>
                           </font>
@@ -223,8 +223,8 @@
                     <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
                       <label class="">
                         <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                            class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                            style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                            class="flat" id="cupim" name="carne" checked="checked" value="25.90" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
                         <font style="vertical-align: inherit;">
                           <font style="vertical-align: inherit;"> <b>Cupim</b>
                           </font>
@@ -241,152 +241,168 @@
                 <p>Agora escolha os acompanhamentos!
                 </p>
                 <div class="form-group">
-                    <div class="col-md-9 col-sm-9 col-xs-12">
-                      <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
-                        <label class="">
-                          <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                              class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                              style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                          <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"> <b>Arroz</b>
-                            </font>
+                  <div class="col-md-9 col-sm-9 col-xs-12">
+                    <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
+                      <label class="">
+                        <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
+                            class="flat" id="arroz" name="acomp" checked="checked" value="4.0" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;"> <b>Arroz</b>
                           </font>
-                          <h2><img class="img_body" src="img/arroz.jpg" /></h2>
-                          <h3>R$ ~4,00/Kg</h3>
-                        </label>
-                      </div>
-                      <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
-                        <label class="">
-                          <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                              class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                              style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                          <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"> <b>Pão de Alho</b>
-                            </font>
+                        </font>
+                        <h2><img class="img_body" src="img/arroz.jpg" /></h2>
+                        <h3>R$ ~4,00/Kg</h3>
+                      </label>
+                    </div>
+                    <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
+                      <label class="">
+                        <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
+                            class="flat" id="pao-alho" name="acomp" checked="checked" value="15.00" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;"> <b>Pão de Alho</b>
                           </font>
-                          <h2><img class="img_body" src="img/pao_alho.jpg" /></h2>
-                          <h3>R$ ~24,00/Kg</h3>
-                        </label>
-                      </div>
-                      <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
-                        <label class="">
-                          <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                              class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                              style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                          <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"> <b>Queijo Coalho</b>
-                            </font>
+                        </font>
+                        <h2><img class="img_body" src="img/pao_alho.jpg" /></h2>
+                        <h3>R$ ~15,00/Kg</h3>
+                      </label>
+                    </div>
+                    <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
+                      <label class="">
+                        <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
+                            class="flat" id="queijo-coalho" name="acomp" checked="checked" value="55.00" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;"> <b>Queijo Coalho</b>
                           </font>
-                          <h2><img class="img_body" src="img/queijo.jpg" /></h2>
-                          <h3>R$ ~55,00/Kg</h3>
-                        </label>
-                      </div>
-                      <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
-                        <label class="">
-                          <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                              class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                              style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                          <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"> <b>Vinagrete</b>
-                            </font>
+                        </font>
+                        <h2><img class="img_body" src="img/queijo.jpg" /></h2>
+                        <h3>R$ ~55,00/Kg</h3>
+                      </label>
+                    </div>
+                    <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
+                      <label class="">
+                        <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
+                            class="flat" id="vinagrete" name="acomp" checked="checked" value="5.00" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;"> <b>Vinagrete</b>
                           </font>
-                          <h2><img class="img_body" src="img/vinagrete.jpg" /></h2>
-                          <h3>R$ ~5,0/Kg</h3>
-                        </label>
-                      </div>
+                        </font>
+                        <h2><img class="img_body" src="img/vinagrete.jpg" /></h2>
+                        <h3>R$ ~5,0/Kg</h3>
+                      </label>
                     </div>
                   </div>
+                </div>
               </div>
               <div id="step-5">
                 <h2 class="StepTitle">Bebidas</h2>
                 <p>Por último... Informe as bebidas...</p>
                 <div class="form-group">
-                    <div class="col-md-9 col-sm-9 col-xs-12">
-                      <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
-                        <label class="">
-                          <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                              class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                              style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                          <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"> <b>Sucos</b>
-                            </font>
+                  <div class="col-md-9 col-sm-9 col-xs-12">
+                    <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
+                      <label class="">
+                        <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
+                            class="flat" id="suco" name="bebida" checked="checked" value="5.49" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
+                            style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;"> <b>Sucos</b>
                           </font>
-                          <h2><img class="img_body" src="img/suco.jpg" /></h2>
-                          <h3>R$ ~5,49/L</h3>
-                        </label>
-                      </div>
-                      <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
-                        <label class="">
-                          <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                              class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                              style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                          <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"> <b>Refrigerantes</b>
-                            </font>
+                        </font>
+                        <h2><img class="img_body" src="img/suco.jpg" /></h2>
+                        <h3>R$ ~5,49/L</h3>
+                      </label>
+                    </div>
+                    <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
+                      <label class="">
+                        <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
+                            class="flat" id="refrigerante" name="bebida" checked="checked" value="2.50" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;"> <b>Refrigerantes</b>
                           </font>
-                          <h2><img class="img_body" src="img/refrigerante.jpg" /></h2>
-                          <h3>R$ ~2,50/L</h3>
-                        </label>
-                      </div>
-                      <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
-                        <label class="">
-                          <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
-                              class="flat" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                              style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                          <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"> <b>Cervejas</b>
-                            </font>
+                        </font>
+                        <h2><img class="img_body" src="img/refrigerante.jpg" /></h2>
+                        <h3>R$ ~2,50/L</h3>
+                      </label>
+                    </div>
+                    <div style="margin: 2vw; margin-left: 3vw; float: left;" class="checkbox">
+                      <label class="">
+                        <div class="icheckbox_flat-green checked" style="position: relative;"><input type="checkbox"
+                            class="flat" id="cerveja" name="bebida" checked="checked" value="11.00" style="position: absolute; opacity: 0;"><ins
+                            class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;"> <b>Cervejas</b>
                           </font>
-                          <h2><img class="img_body" src="img/cerveja.jpg" /></h2>
-                          <h3>R$ ~11,00/L</h3>
-                        </label>
-                      </div>
+                        </font>
+                        <h2><img class="img_body" src="img/cerveja.jpg" /></h2>
+                        <h3>R$ ~11,00/L</h3>
+                      </label>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
             <!-- End SmartWizard Content -->
 
+            <div class="clearfix"></div>
+            <div class="row" id="result">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h1><b>Resultado:</b><div id="div-valor"></div> </h1>
+                  </div>
+                </div>
 
+                <div class="clearfix"></div>
+                <div>
+                    <div id="div-carne"></div>
+                    <div class="clearfix"></div>
+                    <div id="div-acomp"></div>
+                    <div class="clearfix"></div>
+                    <div id="div-bebida"></div>  
+                </div>
+              
+            </div>
           </div>
+
         </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            by Jônathas Assunção | Goiânia - GO | @2018 | <a href="https://www.facebook.com/jonathas.assuncao.35"><img
+                class="img_footer" src="img/facebook.png" /></a> <a href="https://plus.google.com/u/0/105432877782806696266"><img
+                class="img_footer" src="img/google.png" /></a> <a href="https://github.com/jonassuncao"><img class="img_footer"
+                src="img/github.jpg" /></a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+
       </div>
 
-    </div>
-    <!-- /page content -->
-
-    <!-- footer content -->
-    <footer>
-      <div class="pull-right">
-        by Jônathas Assunção | Goiânia - GO | @2018 | <a href="https://www.facebook.com/jonathas.assuncao.35"><img
-            class="img_footer" src="img/facebook.png" /></a> <a href="https://plus.google.com/u/0/105432877782806696266"><img
-            class="img_footer" src="img/google.png" /></a> <a href="https://github.com/jonassuncao"><img class="img_footer"
-            src="img/github.jpg" /></a>
-      </div>
-      <div class="clearfix"></div>
-    </footer>
-    <!-- /footer content -->
-
-  </div>
-
-  <!-- jQuery -->
-  <script src="js/tamplate-js/jquery.min.js"></script>
-  <!-- Bootstrap -->
-  <script src="js/tamplate-js/bootstrap.min.js"></script>
-  <!-- FastClick -->
-  <script src="js/tamplate-js/fastclick.js"></script>
-  <!-- NProgress -->
-  <script src="js/tamplate-js/nprogress.js"></script>
-  <!-- jQuery Smart Wizard -->
-  <script src="js/tamplate-js/jquery.smartWizard.js"></script>
-  <!-- Custom Theme Scripts -->
-  <script src="js/tamplate-js/custom.min.js"></script>
-  <!-- iCheck -->
-  <script src="js/tamplate-js/icheck.min.js"></script>
-  <!-- Switchery -->
-  <script src="js/tamplate-js/switchery.min.js"></script>
-  <!-- JavaScript - @Jonathas -->
-  <script src="js/script.js"></script>
+      <!-- jQuery -->
+      <script src="js/tamplate-js/jquery.min.js"></script>
+      <!-- Bootstrap -->
+      <script src="js/tamplate-js/bootstrap.min.js"></script>
+      <!-- FastClick -->
+      <script src="js/tamplate-js/fastclick.js"></script>
+      <!-- NProgress -->
+      <script src="js/tamplate-js/nprogress.js"></script>
+      <!-- jQuery Smart Wizard -->
+      <script src="js/tamplate-js/jquery.smartWizard.js"></script>
+      <!-- Custom Theme Scripts -->
+      <script src="js/tamplate-js/custom.min.js"></script>
+      <!-- iCheck -->
+      <script src="js/tamplate-js/icheck.min.js"></script>
+      <!-- Switchery -->
+      <script src="js/tamplate-js/switchery.min.js"></script>
+      <!-- JavaScript - @Jonathas -->
+      <script src="js/script.js"></script>
 
 </body>
 

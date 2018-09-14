@@ -59,26 +59,18 @@ function SmartWizard(target, options) {
         this.contentWidth = $this.elmStepContainer.width();
 
         $($this.buttons.next).click(function() {
+            window.location.href='#bd';
             $this.goForward();
             return false;
         });
         $($this.buttons.previous).click(function() {
+            window.location.href='#bd';
             $this.goBackward();
             return false;
         });
-        $($this.buttons.finish).click(function() {
+        $($this.buttons.finish).click(function() {            
             if(!$(this).hasClass('buttonDisabled')){
-                if($.isFunction($this.options.onFinish)) {
-                    var context = { fromStep: $this.curStepIdx + 1 };
-                    if(!$this.options.onFinish.call(this,$($this.steps), context)){
-                        return false;
-                    }
-                }else{
-                    var frm = $this.target.parents('form');
-                    if(frm && frm.length){
-                        frm.submit();
-                    }
-                }
+                calcular();  
             }
             return false;
         });
