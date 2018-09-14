@@ -95,6 +95,7 @@ function calcular() {
 
 	/*====================Mostrando o Totalizador e dividindo pela quantidade de pessoas=========================*/	
 	//Rateia o total pela quantidade de pessoas	
+	totalizador = Math.round(totalizador * 100)/100;
 	var rateio = Math.round(totalizador/($("#qtd-homem").val()*1 + $("#qtd-mulher").val()*1 + $("#qtd-crianca").val()*1)*100)/100;
 	$('#div-valor').html(" R$ "+totalizador+"           (<b>R$ "+rateio+"/Convidado</b>)");	
 	/*====================FIM - Calculando Bebidas=========================*/
