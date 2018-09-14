@@ -94,30 +94,9 @@ function calcular() {
 	/*====================FIM - Calculando Bebidas=========================*/
 
 	/*====================Mostrando o Totalizador e dividindo pela quantidade de pessoas=========================*/	
-	$('#div-valor').html("<h2><b> R$ "+totalizador+"</b></h2>");	
-	//Rateia o total pela quantidade de pessoas
-	var round;
-	var rateio;
-	//Verificando se tem Homem nos convidados
-	if($("#qtd-homem").val() != 0){		
-		round = totalizador * 0.6;
-		rateio = round/$("#qtd-homem").val();
-		$('#div-result').html($('#div-result').html()+"<br/><p><h4>========================<b> Homens </b>R$"+round+" ("+qtd_bebida+"L)</h3></p>");	
-	}
-	if (precos_bebida.length != 0) {			
-		//Calcula quantidade de bebidas
-		var vlr_bebida;
-		var qtd_bebida = $("#qtd-homem").val()*1+$("#qtd-mulher").val()*0.8+$("#qtd-crianca").val()*0.6;		
-		qtd_bebida /= precos_bebida.length;
-		qtd_bebida = Math.round(qtd_bebida * 1000)/1000;
-		for(var i=0; i<precos_bebida.length; i++) {		
-			vlr_bebida = Math.round(qtd_bebida*precos_bebida[i] * 100)/100;	
-			totalizador += vlr_bebida;
-			/*Coloca o resultado no HTML*/
-			$('#div-bebida').html($('#div-bebida').html()+"<br/><p><h3><b>"+tipos_bebida[i]+": </b>R$"+vlr_bebida+" ("+qtd_bebida+"L)</h3></p>");	
-		}		
-	}	
-	$('#div-bebida').html($('#div-bebida').html()+"<br/><p>=======================================================================</p>");	
+	//Rateia o total pela quantidade de pessoas	
+	var rateio = Math.round(totalizador/($("#qtd-homem").val()*1 + $("#qtd-mulher").val()*1 + $("#qtd-crianca").val()*1)*100)/100;
+	$('#div-valor').html(" R$ "+totalizador+"           (<b>R$ "+rateio+"/Convidado</b>)");	
 	/*====================FIM - Calculando Bebidas=========================*/
 
 	//Exibe a tela de resultado
